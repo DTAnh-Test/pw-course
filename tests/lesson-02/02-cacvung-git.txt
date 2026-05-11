@@ -8,4 +8,4 @@ d. Chạy lệnh: git add file1 => Thực hiện đẩy file1 từ vùng Working
 e. Chạy lệnh: git commit -m”add file1”: Thực hiện gom file1 ở vùng Staging vào phiên bản commit với mô tả "add file1" sau đó đẩy sang vùng Repository
 f. Chạy lệnh: git commit -m”add file”: Có thể báo lỗi hoặc một cảnh báo nào đó do lúc này vùng Staging đang trống
 -----
-=> câu c, e, f: Sau khi chạy thử thực tế thì có thông báo là không có gì để commit cả, đồng thời đưa ra các file có sự thay đổi/ tạo mới kèm hướng dẫn sử dụng lệnh git add để tạo commit
+=> câu c/f: Sau khi chạy thử thực tế thì có thông báo là không có gì để commit cả, đồng thời đưa ra các file có sự thay đổi/ tạo mới kèm hướng dẫn sử dụng lệnh git add để tạo commit
