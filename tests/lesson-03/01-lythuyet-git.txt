@@ -1,0 +1,14 @@
+1. Giải thích các câu lệnh: git commit --amend, git commit --amend
+-m”<message>”, git restore --staged <file>, git reset HEAD~1.
+
+
+-   **git restore --staged <ten_file1> <ten_file2>...**
+Lệnh này cho phép kéo các file được gọi tên đang được đóng gói và chuẩn bị commit ở vùng Staging về lại vùng Working Directiry.
+
+-   **git reset HEAD~1**
+Lệnh này cho phép xoá số lượng commit (tính từ commit mới nhất) và kéo các file thay đổi về lại vùng Working directiry.
+Lưu ý: Commit đầu tiên không thể bị xoá 
+
+- git commit --amend : Lệnh này cho phép chỉnh sửa nội dung của commit trước đó (message, add file)
+
+- git commit --amend -m”<message>” : Lệnh này cho phép thay đổi commit message cuối cùng (mới nhất)
