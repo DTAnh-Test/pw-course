@@ -1,0 +1,60 @@
+1. Sử dụng xpath tuyệt đối, chọn phần tử sau:
+a. Lấy input "Họ và tên" : /html/body/div/div[1]/form/input[1]
+b. Lấy button "Đăng ký" : /html/body/div/div[1]/form/button
+c. Lấy hàng đầu tiên trong tbody : /html/body/div/div[2]/table/tbody/tr[1]
+
+2. Sử dụng xpath tương đối, chọn phần tử sau:
+a. Lấy input có placeholder="Số điện thoại" : //input[@placeholder='Số điện thoại']
+b. Lấy email của "Trần Thị Bình" (hàng 2, cột 2) : //tbody/tr[2]/td[2]
+c. Lấy số điện thoại của "Lê Hoàng Cường" (hàng 3, cột 3) : //tbody/tr[3]/td[3]
+d. Lấy button có class="btn-register" : //button[@class='btn-register']
+e. Lấy table có id="resultTable" : //table[@id='resultTable']
+
+<!DOCTYPE html>
+<html>
+<body>
+  <div class="container">
+    <!-- Form Đăng Ký -->
+    <div class="registration-form">
+      <h2>Form Đăng Ký Học Viên</h2>
+      <form id="studentForm">
+        <input id="fullname" name="name" type="text" placeholder="Họ và tên">
+        <input id="email" name="email" type="email" placeholder="Email">
+        <input id="phone" name="phone" type="tel" placeholder="Số điện thoại">
+        <button type="submit" class="btn-register">Đăng ký</button>
+      </form>
+    </div>
+
+    <!-- Bảng Kết Quả -->
+    <div class="result-section">
+      <h2>Danh Sách Đã Đăng Ký</h2>
+      <table id="resultTable">
+        <thead>
+          <tr>
+            <th>Họ Tên</th>
+            <th>Email</th>
+            <th>Số Điện Thoại</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nguyễn Văn An</td>
+            <td>an.nguyen@email.com</td>
+            <td>0901234567</td>
+          </tr>
+          <tr>
+            <td>Trần Thị Bình</td>
+            <td>binh.tran@email.com</td>
+            <td>0912345678</td>
+          </tr>
+          <tr>
+            <td>Lê Hoàng Cường</td>
+            <td>cuong.le@email.com</td>
+            <td>0923456789</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
