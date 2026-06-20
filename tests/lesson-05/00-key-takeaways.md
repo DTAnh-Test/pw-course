@@ -29,7 +29,7 @@ Ghi chú, tổng hợp lại các kiến thức đã học
         -   Cú pháp ngắn gọn, không phụ thuộc vào cấu trúc DOM
         -   Hướng tới “giống người dùng đang nhìn thấy gì”
         -   Ex: `page.getByText(“Add to cart”);`
-1.   **Xpath Selector**
+2.   **Xpath Selector**
 -   Có 2 loại:
     -   Xpath tuyệt đối: Đi dọc theo cây DOM. Ex: `/html/body/div[1]/div/div[2]/div/div[14]`.
         -   Bắt đầu từ gốc, dùng /.
@@ -39,7 +39,7 @@ Ghi chú, tổng hợp lại các kiến thức đã học
     -   Xpath tương đối (**Nên dùng**): Tìm phần tử dựa theo đặc tính. Bắt đầu bằng //. Ex: `//h3[text()='Giới thiệu Viettel']`.
         -   Bắt đầu từ bất kỳ vị trí nào trong DOM, dùng //.
         -   Linh hoạt, ít bị ảnh hưởng khi HTML thay đổi.
-2.  **Playwright selector**
+3.  **Playwright selector**
 -   Cú pháp:
     ```
     import { test, expect } from '@playwright/test';
